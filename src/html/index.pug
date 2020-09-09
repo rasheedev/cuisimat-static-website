@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+        //- Navbar
+        include sections/header.pug
+
+        //- Home Page
+        div(id="home-page")
+
+                // Banner
+                section(id="banner")
+                    div(class="owl-carousel" id="owl-banners")
+                        div(class="bg-image" style="background-image: url(img/banners/banner.png);")
+                            div(class="content")
+                                h1 Bienvenue sur Cuisimat
+                                    span Le partenaire des professionnels des métiers de bouche
+                        div(class="bg-image" style="background-image: url(img/banners/banner.png);")
+                            div(class="content")
+                                h1 Bienvenue sur Cuisimat
+                                    span Le partenaire des professionnels des métiers de bouche
+                        div(class="bg-image" style="background-image: url(img/banners/banner.png);")
+                            div(class="content")
+                                h1 Bienvenue sur Cuisimat
+                                    span Le partenaire des professionnels des métiers de bouche
+
+                // Features
+                div(id="features")
+                    div(class="container")
+                        div(class="row")
+                            div(class="col-lg-3 col-sm-6")
+                                div(class="single-feature")
+                                    img(src="img/features/feature1.png", alt="produits")
+                                    p(class="text") Une sélection de 26.000 produits
+                            div(class="col-lg-3 col-sm-6")
+                                div(class="single-feature")
+                                    img(src="img/features/feature2.png", alt="livraison")
+                                    p(class="text") Livraison dans touute l'Europe sous 3 à 10 jours
+                            div(class="col-lg-3 col-sm-6")
+                                div(class="single-feature")
+                                    img(src="img/features/feature3.png", alt="paiements")
+                                    p(class="text") Paiements securisée (Mastercard, visa, virement...)
+                            div(class="col-lg-3 col-sm-6")
+                                div(class="single-feature")
+                                    img(src="img/features/feature4.png", alt="expérience")
+                                    p(class="text") Plus de 20 ans d'expérience
+
+                // Brands
+                section(class="section" id="brands")
+                    div(class="container")
+                        div(class="brands-head")
+                            h2 Nous travaillons Uniquement
+                                span avec les meilleurs marques du marché
+                            p Navati, Tecnox, Rubbermaid, Zanussi et bien d'autres
+                        div(class="brands-wrap text-center")
+                            div(class="owl-carousel" id="owl-brands")
+                                div(class="single-brand")
+                                    img(src="img/brands/brand1.png" class="img-fluid")
+                                div(class="single-brand")
+                                    img(src="img/brands/brand2.png" class="img-fluid")
+                                div(class="single-brand")
+                                    img(src="img/brands/brand3.png" class="img-fluid")
+                                div(class="single-brand")
+                                    img(src="img/brands/brand4.png" class="img-fluid")
+                                div(class="single-brand")
+                                    img(src="img/brands/brand5.png" class="img-fluid")
+                                div(class="single-brand")
+                                    img(src="img/brands/brand6.png" class="img-fluid")
+
+                // Brands
+                //- section(id="about")
+                //-     div(class="container")
+                //-         div(class="row")
+                //-             div(class="col-md-6")
+                //-                 div(class="contact")
+                //-                     h2 Rendez-nous visite 
+                //-                         span dans notre showroom
+                //-                     div(class="row")
+                //-                         div(class="col-md-6")
+                //-                             img(class="img-fluid" src="")
+                //-                         div(class="col-md-6")
+
+
+        //- Footer
+        include sections/footer.pug
+
+        // Scripts
+        include includes/scripts.pug

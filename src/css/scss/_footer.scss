@@ -1,0 +1,84 @@
+/*-------------------------------------------------------*/
+/* Footer
+/*-------------------------------------------------------*/
+.footer {
+    .footer-details {
+        padding: 10px 0 0px;
+        background-color: $blue-color;
+        padding-top: -40px;
+        .footer-detail{
+            padding-top: 40px;
+            h5 {
+                color: #fff;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+                font-size: 18px;
+                font-weight: 800;
+            }
+            ul {
+                margin: 0;
+                li {
+                    margin-bottom: 5px;
+                    a{
+                        color: #fff;
+                        font-size: 16px;
+                        &:hover,
+                        &:focus {
+                            color: $orange-color;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-hours {
+            p {
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+    }
+    .footer-contact {
+        padding: 80px 0 40px;
+        background-color: $blue-color;
+        text-align: center;
+        a {
+            font-weight: 800;
+            font-size: 18px;
+            color: #fff;
+            padding-right: 15px;
+            padding-left: 15px;
+            letter-spacing: 1px;
+            border-right: 2px solid #fff;
+            display: inline-block;
+            line-height: 16px;
+            &:last-child {
+                margin: 0;
+                border: none;
+            }
+            &:hover {
+                color: $orange-color;
+            }
+        }
+    }
+    .footer-copyright {
+        background-color: #fff;
+        padding: 20px 0;
+        p {
+            margin: 0;
+            color: $text-color;
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 991.98px) {
+    .footer {
+        .footer-copyright {
+            p {
+                text-align: center;
+                &.author {
+                    padding-top: 15px;
+                }
+            }
+        }
+    }
+}
