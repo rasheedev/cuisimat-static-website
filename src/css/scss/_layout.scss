@@ -98,6 +98,57 @@
             }
         }
     }
+    /* Categories */
+    #categories {
+        padding: 80px 0;
+        border-bottom: 1px solid #c3c3c3;
+        .categories-head {
+            margin-bottom: 60px;
+            h2 {
+                font-weight: 800;
+                margin-bottom: 40px;
+                font-size: 34px;
+                span {
+                    color: $orange-color;
+                    display: block;
+                }
+            }
+        }
+        .categories-wrap {
+            margin-top: -30px;
+            .single-category {
+                margin-top: 30px;
+                background-color: #eee;
+                width: calc(100% - 10px);
+                margin-left: 10px;
+                transition: all 1s;
+                &:hover {
+                    background-color: $orange-color;
+                }
+                .content {
+                    position: relative;
+                    left: -10px;
+                    img {
+                        padding: 10px 0 10px 0;
+                        min-width: 100%;
+                        display: inline-block;
+                    }
+                    .title {
+                        position: absolute;
+                        bottom: 20px;
+                        left: 0;
+                        font-weight: 800;
+                        font-size: 18px;
+                        padding: 10px 30px 10px 20px;
+                        width: 90%;
+                        color: $orange-color;
+                        background-color: rgba(#fff, .8);
+                    }
+                }
+                    
+            }
+        }
+    }
     /* Brands */
     #brands {
         .brands-head {
@@ -166,6 +217,84 @@
             }
         }
     }
+    /* About */
+    #about {
+        border-top: 1px solid #c3c3c3;
+        color: $blue-color;
+        position: relative;
+        &:before {
+            border-right: 1px solid #c3c3c3;
+            content: "";
+            position: absolute;
+            left: 50%;
+            height: 100%;
+        }
+        .title {
+            font-weight: 800;
+            margin-bottom: 40px;
+            font-size: 34px;
+            span {
+                color: $orange-color;
+                display: block;
+            }
+        }
+        .contact {
+            padding: 80px 0;
+            padding-right: 40px;
+            img {
+                margin-bottom: 20px;
+            }
+            .info {
+                .contact-info {
+                    margin-top: 20px;
+                    a {
+                        font-weight: 800;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .cuisimat {
+            padding: 80px 0;
+            padding-left: 40px;
+            .text {
+                position: relative;
+                padding-bottom: 40px;
+                &:after {
+                    position: absolute;
+                    bottom: 0;
+                    height: 100%;
+                    width: 100%;
+                    content: "";
+                    background: linear-gradient(to top, rgba(255,255,255, 1) 20%, rgba(255,255,255, 0) 100% );
+                    pointer-events: none;
+                }
+            }
+            .read-more {
+                color: $blue-color;
+                font-weight: 800;
+                font-size: 16px;
+                position: relative;
+                display: block;
+                padding-bottom: 25px;
+                &:hover {
+                    color: $orange-color;
+                    &:after {
+                        background-color: $blue-color;
+                    }
+                }
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 15%;
+                    height: 1px;
+                    margin-top: 3px;
+                    background-color: $orange-color;
+                    transition: all .5s;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -199,6 +328,23 @@
                 button {
                     display: none;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    #home-page {
+        #about {
+            &:before {
+                border: none;
+            }
+            .contact{
+                padding-right: 0;
+            }
+            .cuisimat{
+                padding-left: 0;
+                padding-top: 0;
             }
         }
     }
