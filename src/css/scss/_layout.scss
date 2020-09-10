@@ -163,7 +163,7 @@
         }
         .products-links {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             a {
                 color: $blue-color;
                 padding: 10px 20px;
@@ -245,6 +245,17 @@
                         }
                     }
                 }
+            }
+        }
+        .products-more {
+            text-align: center;
+            margin-top: 50px;
+            a {
+                color: $blue-color;
+                font-size: 18px;
+                font-weight: 800;
+                padding-bottom: 8px;
+                border-bottom: 1px solid $orange-color;
             }
         }
     }
